@@ -1,0 +1,17 @@
+{
+  "name": "opza",
+  "version": "1.0.0",
+  "main": "ozpa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "terser opza.js -o opza.min.js && csso opza.css -o opza.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csso-cli": "^4.0.2",
+    "terser": "^5.39.0"
+  }
+}
