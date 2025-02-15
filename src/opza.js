@@ -125,33 +125,6 @@ Opza.prototype._build = function () {
     this._opzaBox.style.width = "500px";
   }
 
-  // Xử lý icon cho modal
-  if (this.opt.icon) {
-    const arrayTypeIcon = ["success", "error", "info", "waring", "question"];
-    if (arrayTypeIcon.includes(this.opt.icon)) {
-      this._containerIcon = this._createElement("div", "opza__icon");
-
-      // Xóa icon cũ để đảm bảo animation luôn chạy lại
-      this._containerIcon.innerHTML = "";
-
-      // Tạo SVG element
-      const iconHtml = this._getSvgIcon(this.opt.icon);
-      this._containerIcon.innerHTML = iconHtml;
-
-      // Lấy thẻ SVG và áp dụng hiệu ứng pop
-      const svgElement = this._containerIcon.querySelector("svg");
-      if (svgElement) {
-        svgElement.classList.add("opza__icon", `opza__icon-${this.opt.icon}`);
-        svgElement.style.opacity = "1"; // Hiển thị icon ngay lập tức
-        this._containerIcon.style.opacity = "1"; // Hiển thị icon ngay lập tức
-      }
-    } else {
-      console.error = `${this.opt.icon} does not belong to supported values!`;
-    }
-
-    this._opzaContent.append(this._containerIcon);
-  }
-
   // Trường hợp có Template
   if (this.templateContent) {
     // Clone Node Content từ template
