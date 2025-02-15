@@ -1,0 +1,157 @@
+/* CSS Custom Modal Opza */
+.modal__box {
+  border: 1px solid #dee2e6;
+}
+
+.modal__header {
+  background: var(--color-primary);
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: white;
+  padding: 16px 20px;
+  font-size: 2.2rem;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.modal__btn-close:hover {
+  color: #000;
+}
+
+.modal__body {
+  background: #fff;
+  color: #555;
+  padding: 16px;
+}
+
+.modal__img,
+iframe {
+  width: 100%;
+}
+
+.modal__footer {
+  background: #f4f4f4;
+}
+
+.modal__btn:hover {
+  opacity: 0.9;
+}
+
+/* Button Custom */
+.btn-demo {
+  text-align: center;
+  width: max-content;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  text-transform: capitalize;
+  padding: 10px 16px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-demo:hover {
+  background: linear-gradient(135deg, #5b86e5, #36d1dc);
+}
+
+.modal__btn {
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.btn--round {
+  border-radius: 999px;
+  background: var(--color-primary);
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: #fff;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: #fff;
+}
+
+.btn--danger {
+  background: #ff5252;
+  color: #fff;
+}
+
+.btn--outline {
+  border: 1px solid var(--color-primary);
+  border-color: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: var(--color-primary);
+}
+
+.modal__content {
+  padding: 40px 16px 0;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  table-layout: auto; /* Cho phép các cột tự động điều chỉnh chiều rộng */
+  overflow: hidden;
+}
+
+/* Header */
+thead {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: white;
+  text-align: left;
+}
+
+th {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap; /* Ngăn dòng tiêu đề bị chia nhỏ */
+}
+
+/* Cột đầu tiên */
+td:first-child,
+th:first-child {
+  width: 2%; /* Đảm bảo cột đầu tiên chỉ rộng đủ cho nội dung */
+  white-space: nowrap; /* Đảm bảo không bị cắt nội dung */
+}
+
+/* Rows */
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+td {
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Viền bảng */
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+}
+
+/* Thêm viền cho header */
+th {
+  border-bottom: 2px solid #5b86e5;
+}
