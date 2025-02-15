@@ -4,7 +4,7 @@
   "main": "ozpa.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "minify": "terser opza.js -o opza.min.js && csso opza.css -o opza.min.css"
+    "minify": "terser src/opza.js -o opza.min.js && csso src/opza.css -o opza.min.css"
   },
   "keywords": [],
   "author": "",
